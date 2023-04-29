@@ -1,0 +1,218 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/* Reset Styles */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Navigation Styles */
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+nav a {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  font-weight: bold;
+  -webkit-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+  padding: 10px 0;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: #08283a;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 1em;
+}
+
+nav a:hover {
+  background-color: #0077b6;
+  color: #fff;
+}
+a:-webkit-any-link {
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: #1d78ad;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 1em;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+a:-webkit-any-link:hover {
+  background-color: #0d3c69;
+}
+
+@media (max-width: 500px) {
+  nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+  }
+
+  nav a {
+    width: 100%;
+    margin-bottom: 2px;
+  }
+}
+
+/* Boxes Styles */
+.boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.boxes div {
+  -ms-flex-preferred-size: calc(33.33% - 20px);
+  flex-basis: calc(33.33% - 20px);
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.boxes div h2 {
+  margin-top: 0;
+  font-size: 24px;
+}
+
+.boxes div p {
+  margin-bottom: 10px;
+}
+
+.boxes .more {
+  padding: 10px 20px;
+  background-color: #0077b6;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 20px;
+  -webkit-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  margin-top: auto;
+}
+
+.boxes .more:hover {
+  background-color: #004f77;
+  text-decoration: none;
+}
+
+/* Footer Styles */
+footer {
+  margin-top: auto;
+  background-color: #f5f5f5;
+  color: #333;
+  padding: 20px;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.2);
+}
+
+footer .signup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: left;
+  -ms-flex-align: left;
+  align-items: left;
+  margin-top: 20px;
+  width: 50%;
+}
+
+footer .signup label {
+  font-size: 16px;
+  margin-right: 20px;
+}
+
+footer input[type="email"] {
+  border: none;
+  border-radius: 20px;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+footer input[type="submit"] {
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  background-color: #0077b6;
+  color: #fff;
+}
+.copyright {
+  text-align: right;
+}
